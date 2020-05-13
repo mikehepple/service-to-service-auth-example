@@ -4,7 +4,7 @@ This repository contains a very rough proof of concept for a micro-service authe
 which goes beyond the usual intra-service authentication to allow additional controls. The
 approach intends to address the following threat scenarios:
 
-![Auth Chain Motivation Diagram](docs/img/Auth Chain Motivation Diagram.png)
+![Auth Chain Motivation Diagram](/docs/img/Auth Chain Motivation Diagram.png)
 
 TA1) A [Server Side Request Forgery (SSRF)](https://portswigger.net/web-security/ssrf) exists in your edge allowing an 
 attacker to make arbitrary calls to internal services
@@ -26,7 +26,7 @@ Each service will have a private key and will be aware of the public key for all
 The HTTP request will contain a single JWT which will be signed by the private key of the calling service. The calling
 service may also include the token that was sent by the previous service as a linked list.
 
-![Token Wrapping](docs/img/Token Wrapping.png)
+![Token Wrapping](/docs/img/Token Wrapping.png)
 
 The following snippet shows the contents of an example token (minus signatures and encoding)
 
