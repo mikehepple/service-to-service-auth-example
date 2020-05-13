@@ -54,3 +54,11 @@ that requests must take to be accepted.
 
 To see a working example of this concept, see [cmd/examples/microservices.go](cmd/examples/microservices.go) which uses
 the service layout described above and attempts the two documented attacks. 
+
+# Outstanding questions
+
+1) What is the performance impact of this approach? Can we use caching?
+2) What are the options for key distribution?
+3) Can we use this same mechanism to sign payloads to make trusted documents (e.g. get user permissions
+from a permissions service, signed by that service and provided by a third party or user, 
+such that other services do not need to separately fetch them)
