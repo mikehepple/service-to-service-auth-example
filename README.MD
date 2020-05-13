@@ -4,7 +4,7 @@ This repository contains a very rough proof of concept for a micro-service authe
 which goes beyond the usual intra-service authentication to allow additional controls. The
 approach intends to address the following threat scenarios:
 
-![Auth Chain Motivation Diagram](/docs/img/Auth%20Chain%20Motivation%20Diagram.png)
+![Auth Chain Motivation Diagram](/docs/img/Auth%20Chain%20Motivation%20Diagram.svg)
 
 TA1) A [Server Side Request Forgery (SSRF)](https://portswigger.net/web-security/ssrf) exists in your edge allowing an 
 attacker to make arbitrary calls to internal services
